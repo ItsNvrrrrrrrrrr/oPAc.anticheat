@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Add your dependencies here
+    // For example, if you're using the Spigot API:
+    // implementation 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Implementation-Title': 'Minecraft Anti-Cheat',
+            'Implementation-Version': version
+        )
+    }
+}

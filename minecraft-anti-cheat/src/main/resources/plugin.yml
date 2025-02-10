@@ -1,0 +1,12 @@
+name: AntiCheat
+version: 1.0
+main: com.example.anticheat.AntiCheat
+api-version: 1.13
+commands:
+  anticheat:
+    description: Main command for the AntiCheat plugin
+    usage: /<command>
+permissions:
+  anticheat.use:
+    description: Allows the player to use the AntiCheat commands
+    default: true
