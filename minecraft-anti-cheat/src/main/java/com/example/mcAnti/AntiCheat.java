@@ -1,3 +1,5 @@
+package com.example.mcAnti;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -13,7 +15,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.HashMap;
 import java.util.UUID;
 
-public class anti extends JavaPlugin implements Listener {
+public class AntiCheat extends JavaPlugin implements Listener {
     private final HashMap<UUID, Location> lastLocation = new HashMap<>();
     private final HashMap<UUID, Long> lastLogTime = new HashMap<>();
     private final HashMap<UUID, Long> lastCheckTime = new HashMap<>();
